@@ -25,9 +25,6 @@ p, ul {
 ul {
     padding-left: 20px;
 }
-.blue {
-    color: #2F74BB;
-}
 .animatable {
     visibility: hidden;
     animation-play-state: paused;
@@ -100,6 +97,7 @@ ul {
     position: relative;
     padding: 25px 0px;
     font-weight: 700;
+    background-color: #E9E9E9;
     border: 2px solid #0d274d;
     border-radius: 13px;
     z-index: 10;
@@ -315,7 +313,7 @@ ul {
 .server-stack {
     position: relative;
     width: 135px;
-    bottom: 462px;
+    bottom: 458px;
     left: 226px;
 }
 .transition {
@@ -330,7 +328,6 @@ ul {
 }
 .two > .main-title {
     width: 360px;
-    background-color: #E9E9E9;
 }
 .two > .section-intro {
     width: 892px;
@@ -437,7 +434,7 @@ ul {
 .bar-2 {
     left: 31px;
     height: 45px;
-    background: #3373BA;
+    background: #0FB5E7;
     animation: 5s bar2 linear infinite;
 }
 .bar-3 {
@@ -572,7 +569,6 @@ ul {
 }
 .three > .main-title {
     width: 360px;
-    background-color: #E9E9E9;
     margin: 100px 0;
 }
 
@@ -655,7 +651,6 @@ ul {
 }
 .four > .main-title {
     width: 400px;
-    background-color: #E9E9E9;
     margin: 100px 0;
     right: 120px;
 }
@@ -841,7 +836,7 @@ div.btn {
     background: #1E4471;
     margin: 0px auto;
 }
-.five > .btn.blue {
+.five > .btn {
     margin-top: 0px;
 }
 .final-img {
@@ -881,7 +876,7 @@ div.btn {
 	--loader-size: 0.75rem;
 	--loader-spacing: 0.7rem;
 	--loader-background: rgba(0, 0, 0, .1);
-	--loader-background-active: #1E4471;
+	--loader-background-active: #fff;
 	--loader-animation-duration: 1.2s;
 }
 .loader {
@@ -944,7 +939,7 @@ div.btn {
 }
 @media screen and (max-width: 1300px) {
     .main-container {
-        max-width: 992px;
+        max-width: 1020px;
     }
     .main-outer {
         max-width: 810px;
@@ -1022,7 +1017,7 @@ div.btn {
     }
     .server-stack {
         width: 89px;
-        bottom: 323px;
+        bottom: 319px;
         left: 136px;
     }
     .dot-white-blue {
@@ -1181,7 +1176,7 @@ div.btn {
         width: 810px;
         margin: 50px auto 50px;
     }
-    .five > .btn.blue {
+    .five > .btn {
        width: 400px;
     }
     .final-scine {
@@ -1202,7 +1197,7 @@ div.btn {
 
 @media screen and (max-width: 992px) {
     .main-container {
-        max-width: 767px;
+        max-width: 780px;
     }
     .main-outer {
         max-width: 700px;
@@ -1529,7 +1524,7 @@ div.btn {
         height: 82px;
         width: 90px;
     }
-    .five > .btn.blue {
+    .five > .btn {
         width: 246px;
     }
     .final-scine {
@@ -1681,13 +1676,13 @@ div.btn {
     .final > h3 {
         margin: 0px;
     }
-    .final > .blue {
+    .final > .btn {
         margin-top: 30px;
     }
     .five > .btn {
         width: 216px;
     }
-    .five > .btn.blue {
+    .five > .btn {
         width: 246px;
         padding: 0 25px;
     }
