@@ -286,7 +286,7 @@ ul {
     background-color: #0d274d;
     border: 1.8px solid #0d274d;
     border-radius: 50%;
-    bottom: 498px;
+    bottom: 496px;
     left: 204px;
     animation: datatransfer linear infinite alternate 8s;
 }
@@ -1025,7 +1025,7 @@ div.btn {
         left: 121px;
     }
     .dot-blue {
-        bottom: 345px;
+        bottom: 343px;
         left: 121px;
     }
     @keyframes datatransfer {
