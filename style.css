@@ -349,7 +349,7 @@ ul {
     position: relative;
     margin: auto;
     width: 200px;
-    top: 50px;
+    top: 28px;
 }
 .six > .flex-text,
 .four > .flex-text {
@@ -363,7 +363,7 @@ ul {
     position: relative;
     height: 240px;
     width: 240px;
-    bottom: 132px;
+    bottom: 172px;
     right: 5px;
     animation: rotate 10s linear infinite;
 }
@@ -380,7 +380,7 @@ ul {
     position: relative;
     height: 240px;
     width: 240px;
-    bottom: 372px;
+    bottom: 412px;
     right: 5px;
     animation: -10s rotate 15s linear infinite;
 }
@@ -1284,11 +1284,11 @@ div.btn {
         width: 135px;
     }
     .dot-container {
-        bottom: 85px;
+        bottom: 111px;
         right: 0px;
     }
     .square-container {
-        bottom: 260px;
+        bottom: 286px;
         right: 0px;
     }
     .computer {
