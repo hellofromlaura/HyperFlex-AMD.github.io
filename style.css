@@ -144,8 +144,8 @@ ul {
     width: 45px;
     bottom: 300px;
     left: 150px;
-    animation: floating infinite ease-in-out;
-    animation-duration: 4s;
+    /* animation: floating infinite ease-in-out;
+    animation-duration: 4s; */
 }
 @keyframes floating {
     0% {
@@ -275,9 +275,9 @@ ul {
     width: 8px;
     height: 8px;
     background-color: #fff;
-    border: 2px solid #0d274d;
+    border: 1.8px solid #0d274d;
     border-radius: 50%;
-    bottom: 487px;
+    bottom: 486px;
     left: 204px;
     animation: -5s datatransfer linear infinite alternate 5s;
 }
@@ -286,9 +286,9 @@ ul {
     width: 8px;
     height: 8px;
     background-color: #0d274d;
-    border: 2px solid #0d274d;
+    border: 1.8px solid #0d274d;
     border-radius: 50%;
-    bottom: 499px;
+    bottom: 498px;
     left: 204px;
     animation: datatransfer linear infinite alternate 8s;
 }
@@ -300,7 +300,7 @@ ul {
       transform: translateX(100px);
     }
     45% {
-      transform: translateY(8px) translateX(120px);
+      transform: translateY(7px) translateX(120px);
     }
     65% {
       transform: translateY(135px) translateX(120px);
@@ -472,10 +472,10 @@ ul {
 }
 .lock {
     position: relative;
-    width: 65px;
-    bottom: 115px;
-    left: 39px;
-    animation: 3s boltstrike infinite forwards;
+    width: 60px;
+    bottom: 112px;
+    left: 42px;
+    /* animation: 3s boltstrike infinite forwards; */
 }
 .flex.seven {
     height: 271px;
@@ -780,13 +780,13 @@ div.btn {
     bottom: 20px;
     right: 10px;
 }
-.floating {
+/* .floating {
     animation: floating infinite ease-in-out;
 }
 .floating:nth-child(1) {animation-duration: 4s;}
 .floating:nth-child(2) {animation-duration: 6s;}
 .floating:nth-child(3) {animation-duration: 3s;}
-.floating:nth-child(4) {animation-duration: 4s;}
+.floating:nth-child(4) {animation-duration: 4s;} */
 
 @keyframes floating {
 	0% {
@@ -832,7 +832,7 @@ div.btn {
 .lock-bottom {
     position: relative;
     width: 65px;
-    animation: 3s boltstrike infinite forwards;
+    /* animation: 3s boltstrike infinite forwards; */
     right: 15px;
 }
 .vertical-line {
@@ -854,7 +854,7 @@ div.btn {
     border: 2px solid #1E4471;
     border-radius: 15px;
     background-color: #1E4471;
-    animation: colorchange 5s infinite;
+    /* animation: colorchange 5s infinite; */
     top: 175px;
     left: 710px;
 }
@@ -882,7 +882,7 @@ div.btn {
 	--loader-spacing: 0.7rem;
 	--loader-background: rgba(0, 0, 0, .1);
 	--loader-background-active: #1E4471;
-	--loader-animation-duration: 0.8s;
+	--loader-animation-duration: 1.2s;
 }
 .loader {
 	position: relative;
@@ -1674,6 +1674,9 @@ div.btn {
     .four > .btn {
         width: 144px;
         top: -35px;
+    }
+    .notes > p {
+        font-size: 14px;
     }
     .final > h3 {
         margin: 0px;
