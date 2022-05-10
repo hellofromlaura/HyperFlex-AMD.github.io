@@ -25,6 +25,10 @@ p, ul {
 ul {
     padding-left: 20px;
 }
+a {
+    text-decoration: none;
+    color: #0d274d;
+}
 .animatable {
     visibility: hidden;
     animation-play-state: paused;
@@ -536,7 +540,6 @@ ul {
     box-shadow: inset 0px 0px 0px #7ac142;
     animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
   }
-  
   .animated.checkmark__check {
     transform-origin: 50% 50%;
     stroke-dasharray: 48;
@@ -582,7 +585,6 @@ ul {
     width: 360px;
     margin: 100px 0;
 }
-
 .path-three {
     position: absolute;
     width: 1100px;
@@ -598,7 +600,6 @@ ul {
     top: 150px;
     z-index: 10;
 }
-
 .checkmark-one {
     position: relative;
     width: 90px;
@@ -614,7 +615,6 @@ ul {
     box-shadow: inset 0px 0px 0px #7ac142;
     animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
 }
-  
 .text-box {
     display: flex;
     position: relative;
@@ -786,14 +786,6 @@ div.btn {
     bottom: 20px;
     right: 10px;
 }
-/* .floating {
-    animation: floating infinite ease-in-out;
-}
-.floating:nth-child(1) {animation-duration: 4s;}
-.floating:nth-child(2) {animation-duration: 6s;}
-.floating:nth-child(3) {animation-duration: 3s;}
-.floating:nth-child(4) {animation-duration: 4s;} */
-
 @keyframes floating {
 	0% {
 		transform: translate(0%,0%);	
@@ -838,7 +830,6 @@ div.btn {
 .lock-bottom {
     position: relative;
     width: 65px;
-    /* animation: 3s boltstrike infinite forwards; */
     right: 15px;
 }
 .vertical-line {
@@ -849,6 +840,10 @@ div.btn {
 }
 .five > .btn {
     margin-top: 0px;
+}
+.five > a > .btn {
+    margin-top: 0px;
+    width: 251px;
 }
 .btn.flex {
     background-color: #fff;
@@ -863,7 +858,6 @@ div.btn {
     border: 2px solid #1E4471;
     border-radius: 15px;
     background-color: #1E4471;
-    /* animation: colorchange 5s infinite; */
     top: 175px;
     left: 710px;
 }
@@ -932,11 +926,13 @@ div.btn {
 		transform: translateY(10%);
 		background: var(--loader-background);
 	}
-
 	33% {
 		transform: translateY(-25%);
 		background: var(--loader-background-active);
 	}
+}
+.notes > p {
+    font-size: 14px;
 }
 .footer {
     margin: 100px 0 50px 0;
@@ -1491,7 +1487,7 @@ div.btn {
         margin: 60px auto;
     }
     .btn {
-        width: 371px;
+        width: 381px;
         font-size: 19px;
         margin: 60px auto 0px;
     }
@@ -1500,7 +1496,7 @@ div.btn {
     }
     .path-three {
         width: 477px;
-        top: 3748px;
+        top: 3848px;
     }
     .text-box {
         left: 298px;
@@ -1527,23 +1523,53 @@ div.btn {
     }
     .three > .btn {
         bottom: 85px;
-        width: 188px;
+        width: 191px;
     }
     .path-four {
         width: 613px;
-        top: 4333px;
+        top: 4423px;
+    }
+    .four > .main-title {
+        width: 379px;
+        margin: 0px;
+    }
+    .four > .flex {
+        margin: 0px 0;
     }
     .four > .btn {
-        top: -44px;
+        top: -51px;
     }
     .flex-image-four {
         width: 144px;
-        top: 0px;
-        right: 36px;
+        top: 10px;
+        right: 46px;
     }
     .cluster {
-        height: 82px;
-        width: 90px;
+        width: 60px;
+        height: 65px;
+        margin: 0 5px;
+    }
+    .small-triangle {
+        width: 25px;
+        left: 0px;
+    }
+    .small-circle {
+        width: 25px;
+        left: -8px;
+    }
+    .small-square {
+        width: 22px;
+        left: 11px;
+    }
+    .small-dimond {
+        width: 27px;
+        right: 25px;
+    }
+    .check-three {
+        height: 65px;
+    }
+    .lock-bottom {
+        width: 45px;
     }
     .five > .btn {
         width: 246px;
@@ -1676,7 +1702,7 @@ div.btn {
         display: block;
         position: relative;
         width: 200px;
-        top: 63px;
+        top: 120px;
     }
     .flex-image-four > .flex {
         position: relative;
@@ -1688,11 +1714,10 @@ div.btn {
     }
     .flex-image-four {
         width: 160px;
-        height: 90px;
-        top: -52px;
+        height: 160px;
+        top: 0px;
         right: 0px;
     }
-
     .flex-image-four > .flex {
         margin: 32px auto;
     }
@@ -1706,12 +1731,12 @@ div.btn {
     .final > h3 {
         margin: 0px;
     }
-    /* .final > .btn {
-        margin-top: 30px;
-    } */
     .five > .btn {
         width: 250px;
         padding: 0 25px;
+    }
+    .five > a > .btn {
+        width: 159px;
     }
     .five > .flex {
         width: 247px;
@@ -1724,27 +1749,6 @@ div.btn {
     .check-three {
         height: 50px;
         width: 50px;
-    }
-    .cluster {
-        width: 60px;
-        height: 65px;
-        margin: 0 5px;
-    }
-    .small-triangle {
-        width: 25px;
-        left: 0px;
-    }
-    .small-circle {
-        width: 25px;
-        left: -8px;
-    }
-    .small-square {
-        width: 22px;
-        left: 11px;
-    }
-    .small-dimond {
-        width: 27px;
-        right: 25px;
     }
     .final-scine {
         width: 300px;
