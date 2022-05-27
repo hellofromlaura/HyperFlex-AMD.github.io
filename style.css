@@ -3,18 +3,22 @@ body {
     min-width: 320px;
     height: fit-content;
     font-family: CiscoSans,Arial,sans-serif;
-    color: #0d274d;
+    font-weight: 300;
+    color: #424445;
     text-rendering: optimizeLegibility;
     background: #f2f2f2;
 }
 h1 {
     font-size: 54px;
+    font-weight: 300;
 }
 h2 {
     font-size: 38px;
+    font-weight: 300;
 }
 h3 {
     font-size: 30px;
+    font-weight: 300;
     margin: 0;
 }
 p, ul {
@@ -57,9 +61,6 @@ a {
     content: "";
     clear: both;
     display: table;
-  }
-.oblique {
-    font-style: oblique;
 }
 .fifty-five {
     width: 55%;
@@ -77,7 +78,6 @@ a {
 .main-outer {
     max-width: 992px;
     margin: 0 auto;
-    padding-top: 50px;
     font-size: 16px;
     line-height: 1.2;
 }
@@ -90,17 +90,10 @@ a {
     margin: 100px 0;
     text-align: center;
 }
-.title-div h1 {
-    font-weight: 200;
-}
-.title-div h3 {
-    font-weight: 700;
-}
 .main-title {
     display: inline-block;
     position: relative;
     padding: 25px 0px;
-    font-weight: 700;
     background-color: #E9E9E9;
     border: 2px solid #0d274d;
     border-radius: 13px;
@@ -116,13 +109,14 @@ a {
     width: 892px;
     margin: 77px 0px;
     float: left;
-    font-weight: 300;
+    z-index: 10;
 }
 .flex {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    z-index: 10;
 }
 .flex.one {
     height: 530px;
@@ -139,15 +133,13 @@ a {
 }
 .circle-one {
     width: 420px;
-    animation: rotate 35s linear infinite;
+    animation: rotate 200s linear infinite;
 }
 .moon {
     position: relative;
     width: 45px;
     bottom: 300px;
     left: 150px;
-    /* animation: floating infinite ease-in-out;
-    animation-duration: 4s; */
 }
 @keyframes floating {
     0% {
@@ -208,9 +200,10 @@ a {
 .path-one {
     position: absolute;
     width: 1300px;
-    top: 610px;
+    top: 508px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 0;
 }
 .tab {
     position: relative;
@@ -279,7 +272,7 @@ a {
     background-color: #fff;
     border: 1.8px solid #0d274d;
     border-radius: 50%;
-    bottom: 486px;
+    bottom: 488px;
     left: 204px;
     animation: -5s datatransfer linear infinite alternate 5s;
 }
@@ -290,7 +283,7 @@ a {
     background-color: #0d274d;
     border: 1.8px solid #0d274d;
     border-radius: 50%;
-    bottom: 496px;
+    bottom: 500px;
     left: 204px;
     animation: datatransfer linear infinite alternate 8s;
 }
@@ -317,7 +310,7 @@ a {
 .server-stack {
     position: relative;
     width: 135px;
-    bottom: 458px;
+    bottom: 464px;
     left: 226px;
 }
 .transition {
@@ -326,7 +319,7 @@ a {
 .path-two {
     position: absolute;
     width: 1300px;
-    top: 2900px;
+    top: 2800px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -336,7 +329,6 @@ a {
 .two > .section-intro {
     width: 892px;
     margin: 93px 0px;
-    font-weight: 300;
 }
 .flex-image-two {
     height: 230px;
@@ -366,7 +358,7 @@ a {
     width: 240px;
     bottom: 172px;
     right: 5px;
-    animation: rotate 10s linear infinite;
+    animation: rotate 200s linear infinite;
 }
 .dot-yellow-blue {
     position: relative;
@@ -383,7 +375,7 @@ a {
     width: 240px;
     bottom: 412px;
     right: 5px;
-    animation: -10s rotate 15s linear infinite;
+    animation: -100s rotate 180s linear infinite;
 }
 .square-light-blue-blue {
     position: relative;
@@ -571,10 +563,23 @@ a {
     padding: 0 40px;
     width: 601px;
     border: 2px solid #1E4471;
-    background-color: #E9E9E9;
+    background-color: #1E4471;
     border-radius: 5em;
+    color: #fff;
     text-align: center;
     font-size: 30px;
+    line-height: 2em;
+}
+.not-btn {
+    position: relative;
+    margin: 190px auto 0px;
+    padding: 0 40px;
+    width: fit-content;
+    border: 2px solid #1E4471;
+    background-color: #E9E9E9;
+    border-radius: 13px;
+    text-align: center;
+    font-size: 25px;
     line-height: 2em;
 }
 .three > .main-title,
@@ -588,7 +593,7 @@ a {
 .path-three {
     position: absolute;
     width: 1100px;
-    top: 4850px;
+    top: 4741px;
     left: 50%;
     transform: translateX(-50%);
     margin-left: -90px;
@@ -623,7 +628,7 @@ a {
     border: 2px solid #1E4471;
     border-radius: 20px;
     left: 666px;
-    bottom: 20px;
+    bottom: 12px;
     justify-content: center;
     align-items: center;
 }
@@ -650,13 +655,12 @@ a {
     animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
 }
 .text-box.two {
-    bottom: 72px;
+    bottom: 61px;
     background-color: #fff;
     z-index: 10;
 }
-.three > .btn {
+.three > .not-btn {
     position: relative;
-    width: 370px;
     bottom: 21px;
     left: 57px;
 }
@@ -668,7 +672,7 @@ a {
 .path-four {
     position: absolute;
     width: 1250px;
-    top: 6050px;
+    top: 5921px;
     left: 50%;
     transform: translateX(-50%);
     margin-left: 30px;
@@ -685,10 +689,10 @@ a {
 .flex-image-four > .flex {
     align-items: end;
 }
-.four > .btn {
+.four > .not-btn {
     position: relative;
-    width: 300px;
-    top: 77px;
+    top: 70px;
+    left: 20px;
 }
 .flex-image-four > .flex > .flex-container {
     width: 75px;
@@ -752,9 +756,6 @@ a {
 }
 .final > h3 {
     margin: 40px;
-}
-.final > .text {
-    font-weight: 300;
 }
 div.btn {
     margin: 80px auto 0;
@@ -843,7 +844,7 @@ div.btn {
 }
 .five > a > .btn {
     margin-top: 0px;
-    width: 251px;
+    width: 260px;
 }
 .btn.flex {
     background-color: #fff;
@@ -956,7 +957,7 @@ div.btn {
     }
     .path-one {
         width: 992px;
-        top: 598px;
+        top: 509px;
     }
     .one > .main-title {
         width: 701px;
@@ -964,7 +965,7 @@ div.btn {
     }
     .section-one-intro {
         margin: 20px 0px;
-        width: 693px;
+        width: 745px;
     }
     .flex.one {
         height: 404px;
@@ -1031,11 +1032,11 @@ div.btn {
         left: 136px;
     }
     .dot-white-blue {
-        bottom: 333px;
+        bottom: 334px;
         left: 121px;
     }
     .dot-blue {
-        bottom: 343px;
+        bottom: 346px;
         left: 121px;
     }
     @keyframes datatransfer {
@@ -1065,10 +1066,13 @@ div.btn {
     }
     .path-two {
         width: 992px;
-        top: 2385px;
+        top: 2293px;
     }
     .two > .section-intro {
         margin: 57px 0px;
+    }
+    .two > .not-btn {
+        bottom: 45px;
     }
     .flex.four {
         height: 261px;
@@ -1098,7 +1102,7 @@ div.btn {
     }
     .path-three {
         width: 797px;
-        top: 3925px;
+        top: 3866px;
     }
     .three > .main-title {
         margin: 100px 0 50px;
@@ -1124,8 +1128,8 @@ div.btn {
     .text-box.two {
         bottom: 11px;
     }
-    .three > .btn {
-        bottom: -12px;
+    .three > .not-btn {
+        bottom: 35px;
         left: 0;
     }
     .four > .main-title {
@@ -1134,10 +1138,10 @@ div.btn {
     }
     .path-four {
         width: 916px;
-        top: 4825px;
+        top: 4795px;
     }
     .four > .flex > .flex-text {
-        width: 59%;
+        width: 56%;
     }
     .flex-image-four {
         width: 227px;
@@ -1179,14 +1183,14 @@ div.btn {
         0% { height: 25px; }	
         30%, 100% { height: 70px; }
     }
-    .four > .btn {
-        top: -36px;
+    .four > .not-btn {
+        top: -90px;
     }
     .transition.final {
         width: 810px;
         margin: 50px auto 50px;
     }
-    .five > .btn {
+    .five > .not-btn {
        width: 400px;
     }
     .final-scine {
@@ -1210,16 +1214,16 @@ div.btn {
         max-width: 780px;
     }
     .main-outer {
-        max-width: 700px;
+        max-width: 683px;
     }
     h1 {
         font-size: 53px;
     }
     h3 {
-        font-size: 24px;
+        font-size: 22px;
     }
     p, ul {
-        font-size: 19px;
+        font-size: 18px;
     }
     .margin-top {
         margin-top: 30px;
@@ -1238,13 +1242,13 @@ div.btn {
     }
     .path-one {
         width: 767px;
-        top: 495px;
+        top: 406px;
     }
     .one > .main-title {
         width: 570px;
     }
     .section-one-intro {
-        margin: 27px 0px;
+        margin: 35px 0px;
         width: 639px;
     }
     .flex.one {
@@ -1277,10 +1281,13 @@ div.btn {
     }
     .path-two {
         width: 767px;
-        top: 1920px;
+        top: 1820px;
     }
     .two > .section-intro {
-        margin: 39px 0px;
+        margin: 44px 0px;
+    }
+    .two > .not-btn {
+        bottom: 80px;
     }
     .flex.four {
         height: 201px;
@@ -1340,45 +1347,46 @@ div.btn {
     }
     .path-three {
         width: 577px;
-        top: 3154px;
+        top: 3060px;
     }
     .checkmark-one,
     .check-one {
         left: 334px;
-        top: 87px;
+        top: 85px;
     }
     .checkmark-two,
     .check-two {
         left: 334px;
-        top: -9px;
+        top: 12px;
     }
     .three > .main-title {
-        margin: 100px 0 15px;
+        margin: 40px 0 25px;
     }
     .text-box {
         width: 293px;
         padding: 10px 10px 10px 15px;
-        left: 394px;
-        bottom: 35px;
+        left: 387px;
+        bottom: 25px;
     }
     .text-box.two {
-        bottom: 78px;
+        bottom: 65px;
     }
-    .three > .btn {
-        bottom: 85px;
+    .three > .not-btn {
+        bottom: 135px;
+        left: -11px;
     }
     .path-four {
         width: 708px;
-        top: 3860px;
+        top: 3794px;
     }
     .four > .main-title {
         right: 1px;
-        margin: 5px 0 40px;
+        margin: 0px 0 40px;
     }
     .flex-image-four {
         width: 175px;
-        top: 10px;
-        right: 57px;
+        top: 30px;
+        right: 48px;
     }
     .pie-chart,
     .flex-image-four > .flex > .flex-container {
@@ -1413,15 +1421,20 @@ div.btn {
         0% { height: 25px; }	
         30%, 100% { height: 60px; }
     }
-    .four > .btn {
-        top: -86px;
+    .four > .not-btn {
+        top: -110px;
+    }
+    .final > h3 {
+        margin: 0 40px 40px;
     }
     .four > .flex > .flex-text {
         width: 54%;
     }
     .transition.final {
         width: 700px;
-    }.final-img {
+        margin: 0px auto 50px;
+    }
+    .final-img {
         margin: 50px auto;
     }
     .final-scine {
@@ -1445,11 +1458,14 @@ div.btn {
 
 @media screen and (max-width: 767px) {
     h3 {
-        font-size: 19px;
+        font-size: 22px;
         text-align: center;
     }
     .flex {
         margin: 40px auto;
+    }
+    .not-btn {
+        margin: 140px auto 0px;
     }
     .main-outer {
         max-width: 600px;
@@ -1469,18 +1485,26 @@ div.btn {
         display: none;
     }
     .one > .main-title {
-        width: 555px;
+        width: 420px;
     }
     .flex.one {
         flex-direction: column-reverse;
         height: 480px;
     }
     .flex-text {
+        width: 470px;
         margin-top: 20px;
+    }
+    .two > .main-title {
+        width: 220px;
+        padding: 25px 20px;
     }
     .flex.two {
         flex-direction: column;
         height: 515px;
+    }
+    .six > .flex-text, .four > .flex-text {
+        margin-right: 40px;
     }
     .main-title {
         display: block;
@@ -1492,7 +1516,7 @@ div.btn {
         margin: 60px auto 0px;
     }
     .three > .main-title {
-        margin: 60px 0 22px;
+        margin: 45px 0 10px;
     }
     .path-three {
         width: 477px;
@@ -1502,32 +1526,39 @@ div.btn {
         left: 298px;
         background-color: #fff;
         z-index: 10;
-        bottom: 27px;
+        bottom: 30px;
     }
     .checkmark-one,
     .check-one {
-        left: 259px;
-        top: 87px;
+        left: 255px;
+        top: 70px;
         width: 35px;
         height: 35px;
     }
     .checkmark-two,
     .check-two {
-        left: 259px;
-        top: -20px;
+        left: 255px;
+        top: -15px;
         width: 35px;
         height: 35px;
     }
     .text-box.two {
         bottom: 65px;
     }
-    .three > .btn {
-        bottom: 85px;
-        width: 191px;
+    .three {
+        height: 615px;
+    }
+    .three > .not-btn {
+        width: 235px;
+        bottom: 136px;
+        left: -25px;
     }
     .path-four {
         width: 613px;
-        top: 4423px;
+        top: 4421px;
+    }
+    .four {
+        height: 450px;
     }
     .four > .main-title {
         width: 379px;
@@ -1536,13 +1567,13 @@ div.btn {
     .four > .flex {
         margin: 0px 0;
     }
-    .four > .btn {
-        top: -51px;
+    .four > .not-btn {
+        top: -135px;
     }
     .flex-image-four {
-        width: 144px;
-        top: 10px;
-        right: 46px;
+        width: 150px;
+        top: 7px;
+        right: 42px;
     }
     .cluster {
         width: 60px;
@@ -1571,8 +1602,9 @@ div.btn {
     .lock-bottom {
         width: 45px;
     }
-    .five > .btn {
-        width: 246px;
+    .five > a > .btn {
+        margin-top: 0px;
+        width: 155px;
     }
     .final-scine {
         width: 600px;
@@ -1596,14 +1628,26 @@ div.btn {
     h3 {
         text-align: center;
     }
+    p, ul {
+        text-align: center;
+    }
     .float-right {
         float: none;
     }
+    .section-one-intro {
+        float: none;
+    }
+    .flex-text {
+        width: 350px;
+    }
+    .main-container {
+        max-width: 360px;
+    }
     .main-outer {
-        max-width: 300px;
+        max-width: 360px;
     }
     .main-div {
-        width: 300px;
+        width: 360px;
         margin: 0 auto;
     }
     .top-logo {
@@ -1619,42 +1663,44 @@ div.btn {
     .two > .section-intro, 
     .transition > .section-one-intro, 
     .section-one-intro {
-        margin: 30px 0px;
-        width: 300px;
+        margin: 0px auto;
+        width: 350px;
+    }
+    .two > .flex-image {
+        position: relative;
+        left: 10px;
     }
     .server-stack {
         bottom: 322px;
     }
     .flex.one {
-        height: 615px;
+        height: auto;
     }
     .flex.two {
-        height: 680px;
+        height: auto;
     }
     .btn,
+    .not-btn,
     .three > .main-title,
     .two > .main-title {
-        width: 300px;
-    }
-    .three > .main-title {
-        margin: 60px 0;
+        width: 220px;
     }
     .flex.four {
         flex-direction: column-reverse;
-        height: 320px;
+        height: auto;
     }
     .flex.five {
         flex-direction: column;
-        height: 295px;
+        height: auto;
     }
     .six > .flex-text, .four > .flex-text,
     .seven > .flex-text, .five > .flex-text {
         text-align: center;
-        margin: 0;
+        margin: 20px 0px 0px;
     }
     .flex.six {
         flex-direction: column-reverse;
-        height: 300px;
+        height: auto;
     }
     .flex.seven {
         flex-direction: column;
@@ -1664,15 +1710,16 @@ div.btn {
     .path-three {
         display: none;
     }
-    .two > .btn {
+    .two > .not-btn {
         width: 215px;
         border: none;
         background-color: #fff;
         line-height: 1.2;
     }
     .text-box {
-        left: -15px;
+        left: 0px;
         bottom: -25px;
+        margin: auto;
     }
     .checkmark-one,
     .check-one {
@@ -1685,14 +1732,34 @@ div.btn {
     }
     .text-box.two {
         bottom: -54px;
-    }        
-    .three > .btn {
-        width: 191px;
-        bottom: -22px;
+    }
+    .three {
+        height: auto;
+        width: 350px;
+        margin: 0 auto;
+    }
+    .three > .main-title {
+        width: 265px;
+        margin: 0px auto 60px;
+        float: none;
+    }
+    .three > .section-intro {
+        width: 350px;
+        float: none;
+    }
+    .three > .not-btn {
+        width: 235px;
+        bottom: 35px;
+        left: 0px;
+    }
+    .four {
+        height: auto;
     }
     .four > .main-title {
         width: 298px;
+        margin: 0px auto;
         top: 75px;
+        right: 0px;
     }
     .four > .flex {
         flex-direction: column-reverse;
@@ -1721,17 +1788,18 @@ div.btn {
     .flex-image-four > .flex {
         margin: 32px auto;
     }
-    .four > .btn {
-        width: 147px;
-        top: -35px;
+    .four > .not-btn {
+        width: 180px;
+        top: -110px;
+        left: 0px;
     }
     .notes > p {
         font-size: 13px;
     }
     .final > h3 {
-        margin: 0px;
+        margin: 0px auto 40px;
     }
-    .five > .btn {
+    .five > .not-btn {
         width: 250px;
         padding: 0 25px;
     }
@@ -1739,7 +1807,7 @@ div.btn {
         width: 159px;
     }
     .five > .flex {
-        width: 247px;
+        width: 215px;
     }
     .lock-bottom {
         width: 40px;
@@ -1756,7 +1824,7 @@ div.btn {
     .chat-message__content {
         width: 35px;
         bottom: 122px;
-        left: 156px;
+        left: 186px;
     }
     :root {
         --loader-size: 0.5rem;
