@@ -684,7 +684,7 @@ a {
     position: relative;
     z-index: 10;
     width: 311px;
-    top: 110px;
+    top: 120px;
 }
 .flex-image-four > .flex {
     align-items: end;
@@ -1145,7 +1145,7 @@ div.btn {
     }
     .flex-image-four {
         width: 227px;
-        top: 60px;
+        top: 55px;
         right: 34px;
     }
     .flex-image-four > .flex > .flex-container {
