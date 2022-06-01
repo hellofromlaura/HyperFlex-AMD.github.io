@@ -21,7 +21,7 @@ h3 {
     font-weight: 300;
     margin: 0;
 }
-p, ul {
+p, ul, li {
     margin: 0;
     font-size: 20px;
     line-height: 1.5;
@@ -73,7 +73,7 @@ a {
     min-width: 0;
     padding: 0;
     background-color: #fff;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 12%);
+    /* box-shadow: 0 2px 5px 0 rgb(0 0 0 / 12%); */
 }
 .main-outer {
     max-width: 992px;
@@ -200,7 +200,7 @@ a {
 .path-one {
     position: absolute;
     width: 1300px;
-    top: 508px;
+    top: 482px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 0;
@@ -319,7 +319,7 @@ a {
 .path-two {
     position: absolute;
     width: 1300px;
-    top: 2800px;
+    top: 2784px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -593,7 +593,7 @@ a {
 .path-three {
     position: absolute;
     width: 1100px;
-    top: 4741px;
+    top: 4727px;
     left: 50%;
     transform: translateX(-50%);
     margin-left: -90px;
@@ -672,7 +672,7 @@ a {
 .path-four {
     position: absolute;
     width: 1250px;
-    top: 5921px;
+    top: 5910px;
     left: 50%;
     transform: translateX(-50%);
     margin-left: 30px;
@@ -957,7 +957,7 @@ div.btn {
     }
     .path-one {
         width: 992px;
-        top: 509px;
+        top: 484px;
     }
     .one > .main-title {
         width: 701px;
@@ -1066,7 +1066,7 @@ div.btn {
     }
     .path-two {
         width: 992px;
-        top: 2293px;
+        top: 2280px;
     }
     .two > .section-intro {
         margin: 57px 0px;
@@ -1102,7 +1102,7 @@ div.btn {
     }
     .path-three {
         width: 797px;
-        top: 3866px;
+        top: 3855px;
     }
     .three > .main-title {
         margin: 100px 0 50px;
@@ -1138,7 +1138,7 @@ div.btn {
     }
     .path-four {
         width: 916px;
-        top: 4795px;
+        top: 4788px;
     }
     .four > .flex > .flex-text {
         width: 56%;
@@ -1222,7 +1222,7 @@ div.btn {
     h3 {
         font-size: 22px;
     }
-    p, ul {
+    p, ul, li {
         font-size: 18px;
     }
     .margin-top {
@@ -1242,13 +1242,13 @@ div.btn {
     }
     .path-one {
         width: 767px;
-        top: 406px;
+        top: 365px;
     }
     .one > .main-title {
         width: 570px;
     }
     .section-one-intro {
-        margin: 35px 0px;
+        margin: 27px 0px;
         width: 639px;
     }
     .flex.one {
@@ -1258,7 +1258,7 @@ div.btn {
         min-width: 270px;
     }
     .flex.two {
-        height: 364px;
+        height: 363px;
     }
     .tab {
         bottom: 180px;
@@ -1281,10 +1281,13 @@ div.btn {
     }
     .path-two {
         width: 767px;
-        top: 1820px;
+        top: 1785px;
     }
     .two > .section-intro {
         margin: 44px 0px;
+    }
+    .six > .flex-image-two {
+        height: 100px;
     }
     .two > .not-btn {
         bottom: 80px;
@@ -1347,7 +1350,7 @@ div.btn {
     }
     .path-three {
         width: 577px;
-        top: 3060px;
+        top: 3027px;
     }
     .checkmark-one,
     .check-one {
@@ -1377,7 +1380,7 @@ div.btn {
     }
     .path-four {
         width: 708px;
-        top: 3794px;
+        top: 3763px;
     }
     .four > .main-title {
         right: 1px;
@@ -1520,7 +1523,7 @@ div.btn {
     }
     .path-three {
         width: 477px;
-        top: 3848px;
+        top: 3817px;
     }
     .text-box {
         left: 298px;
@@ -1555,7 +1558,7 @@ div.btn {
     }
     .path-four {
         width: 613px;
-        top: 4421px;
+        top: 4386px;
     }
     .four {
         height: 450px;
