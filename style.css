@@ -570,6 +570,10 @@ a {
     font-size: 30px;
     line-height: 2em;
 }
+a[href].btn:hover, a[href].btn:visited {
+    text-decoration: none;
+    color: #fff;
+}
 .not-btn {
     position: relative;
     margin: 190px auto 0px;
@@ -882,8 +886,8 @@ div.btn {
     left: 535px;
 }
 :root {
-	--loader-size: 0.75rem;
-	--loader-spacing: 0.7rem;
+	--loader-size: 1.1rem;
+	--loader-spacing: 1rem;
 	--loader-background: rgba(0, 0, 0, .1);
 	--loader-background-active: #fff;
 	--loader-animation-duration: 1.2s;
